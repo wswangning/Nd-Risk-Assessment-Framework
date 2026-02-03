@@ -1,16 +1,37 @@
 # Integrated AIVIVE-PBPK-QIVIVE Framework for Neodymium Nitrate Risk Assessment
 
-## 概述
-本仓库包含论文《An Integrated AIVIVE-PBPK-QIVIVE Framework with HTTK Validation for Probabilistic Risk Assessment of Neodymium Nitrate》的完整代码实现。
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
+[![R 4.2+](https://img.shields.io/badge/R-4.2+-blue.svg)](https://www.r-project.org/)
 
-## 主要特性
-- **AIVIVE模型**: 基于条件生成对抗网络(cGAN)的体外到体内转录组响应预测
-- **HTTK校准**: 针对金属化合物的高通量毒代动力学模型校准
-- **PBPK-QIVIVE集成**: 生理药代动力学模型与定量体外到体内外推的耦合
-- **概率风险评估**: 蒙特卡洛模拟与Sobol敏感性分析
+## Overview
+This repository contains the complete implementation of the integrated computational toxicology framework described in the paper:
+**"An Integrated AIVIVE-PBPK-QIVIVE Framework with HTTK Validation for Probabilistic Risk Assessment of Neodymium Nitrate"**.
 
-## 快速开始
-1. 克隆仓库
+The framework combines:
+- **AIVIVE**: AI-enhanced in vitro to in vivo extrapolation using conditional GANs
+- **PBPK**: Physiologically based pharmacokinetic modeling with nonlinear kinetics
+- **QIVIVE**: Quantitative in vitro to in vivo extrapolation
+- **HTTK validation**: High-throughput toxicokinetic model calibration for metal compounds
+
+## Key Features
+- ✅ **Mechanistic prediction** of toxicity pathways (p53, apoptosis, ferroptosis)
+- ✅ **Nonlinear kinetics** modeling (concentration-dependent protein binding)
+- ✅ **Probabilistic risk assessment** with Monte Carlo simulation
+- ✅ **Global sensitivity analysis** using Sobol indices
+- ✅ **Modular parameter interface** supporting multiple data sources
+
+## Quick Start
+
+### Installation
 ```bash
+# Clone repository
 git clone https://github.com/yourusername/Nd-Risk-Assessment-Framework.git
 cd Nd-Risk-Assessment-Framework
+
+# Create conda environment
+conda env create -f environment.yml
+conda activate nd_risk
+
+# Install R dependencies (for HTTK)
+Rscript scripts/install_R_dependencies.R
