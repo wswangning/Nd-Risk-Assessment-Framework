@@ -1,0 +1,12 @@
+results/
+├── assessment_results.json     # Complete assessment results
+├── risk_assessment_report.html # HTML report
+├── figures/                    # Publication-ready figures
+│   ├── HED_distribution.tiff
+│   ├── sensitivity_analysis.tiff
+│   └── risk_characterization.tiff
+├── tables/                     # Data tables
+│   ├── parameter_sensitivity.csv
+│   └── exposure_scenarios.csv
+└── logs/                       # Log files
+    └── pipeline.log

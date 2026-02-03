@@ -1,0 +1,4 @@
+If you use this code, please cite:
+
+Wang et al. (2026). An Integrated AIVIVE-PBPK-QIVIVE Framework with HTTK Validation for Probabilistic Risk Assessment of Neodymium Nitrate. Journal Name.
+

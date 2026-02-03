@@ -1,0 +1,1 @@
+python scripts/run_risk_assessment.py --scenario occupational

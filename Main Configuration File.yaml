@@ -1,0 +1,18 @@
+# AIVIVE Model Parameters
+aivive:
+  input_dim: 15000      # Number of genes
+  latent_dim: 100       # GAN latent dimension
+  learning_rate: 0.0002
+  epochs: 500
+
+# PBPK Model Parameters  
+pbpk:
+  body_weight: 70.0     # kg
+  nonlinear_binding: true
+  b_max: 150.2          # μM
+  k_d: 12.5             # μM
+
+# Risk Assessment
+risk:
+  monte_carlo_iterations: 10000
+  reference_dose: 0.25  # mg/kg/day

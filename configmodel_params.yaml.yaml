@@ -1,0 +1,65 @@
+# AIVIVE Model Parameters
+aivive:
+  input_dim: 15000
+  latent_dim: 100
+  key_genes: 347
+  learning_rate: 0.0002
+  batch_size: 32
+  epochs: 500
+  generator_layers: [15000, 512, 256, 15000]
+  discriminator_layers: [30000, 512, 256, 1]
+  
+# PBPK Model Parameters
+pbpk:
+  species: "human"
+  body_weight: 70.0  # kg
+  compartments: ["plasma", "liver", "kidney", "brain", "rest"]
+  nonlinear_binding: true
+  volume_plasma: 3.0  # L
+  volume_liver: 1.8   # L
+  volume_kidney: 0.3  # L
+  volume_brain: 1.4   # L
+  volume_rest: 63.5   # L
+  
+# HTTK Calibration Parameters
+httk:
+  calibration_method: "nonlinear_u_shape"
+  b_max: 150.2  # μM
+  k_d: 12.5     # μM
+  fu_range: [0.08, 0.965]
+  k_range: [0.034, 0.079]
+  
+# QIVIVE Parameters
+qivive:
+  ec50: 50.0    # μM
+  fu: 0.176
+  k_cell: 1.2
+  hill_coefficient: 1.8
+  
+# Risk Assessment Parameters
+risk:
+  monte_carlo_iterations: 10000
+  latin_hypercube_samples: 10000
+  confidence_level: 0.95
+  risk_thresholds:
+    very_low: 0.01    # mg/kg/day
+    low: 0.024
+    medium: 0.037
+    high: 0.1
+    very_high: 0.2
+  reference_dose: 0.25  # mg/kg/day
+  
+# Exposure Scenarios
+exposure:
+  occupational:
+    concentration: 0.1  # mg/m³
+    inhalation_rate: 20  # m³/day
+    absorption_fraction: 0.8
+  environmental:
+    concentration: 0.05  # mg/L
+    water_intake: 2.0   # L/day
+    absorption_fraction: 0.8
+  accident:
+    concentration: 10.0  # mg/m³
+    inhalation_rate: 20  # m³/day
+    absorption_fraction: 0.8

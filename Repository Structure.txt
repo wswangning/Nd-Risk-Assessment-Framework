@@ -1,0 +1,10 @@
+Nd-Risk-Assessment-Framework/
+├── src/                    # Source code
+├── notebooks/              # Jupyter notebooks for analysis
+├── config/                 # Configuration files
+├── data/                   # Data directory
+├── scripts/                # Execution scripts
+├── tests/                  # Unit tests
+├── docs/                   # Documentation
+├── outputs/                # Generated outputs
+└── models_saved/           # Pretrained models

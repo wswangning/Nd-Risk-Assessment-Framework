@@ -1,0 +1,39 @@
+# Experimental Parameters for Neodymium Nitrate
+experimental:
+  
+  # In vitro cytotoxicity
+  hepg2_ec50: 50.0  # μM
+  ec50_ci: [38.2, 65.4]  # 95% CI
+  
+  # Plasma protein binding
+  plasma_protein_binding:
+    concentrations: [1.0, 10.0, 100.0]  # μg/mL
+    fu_values: [0.556, 0.176, 0.965]
+    method: "equilibrium_dialysis"
+    species: "mouse"
+    
+  # Cellular partition coefficients
+  partition_coefficients:
+    concentrations: [5.0, 50.0, 250.0]  # μM
+    k_values: [0.048, 0.079, 0.034]
+    cell_type: "HepG2"
+    exposure_time: 4  # hours
+    
+  # PBPK animal study
+  animal_study:
+    species: "C57BL/6J_mice"
+    doses: [344.0, 688.0, 1375.0]  # mg/kg
+    sampling_times: [0.083, 0.25, 0.5, 1, 2, 4, 8, 24]  # hours
+    tissues: ["plasma", "liver", "kidney", "brain", "heart"]
+    
+  # Multi-omics data
+  omics:
+    transcriptomics:
+      platform: "RNA-seq"
+      genes: 15000
+      samples: 12
+      groups: ["control", "low", "medium", "high"]
+    metabolomics:
+      platform: "LC-MS"
+      metabolites: 500
+      samples: 12

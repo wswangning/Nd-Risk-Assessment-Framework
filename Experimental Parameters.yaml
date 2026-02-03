@@ -1,0 +1,8 @@
+experimental:
+  hepg2_ec50: 50.0      # μM
+  plasma_protein_binding:
+    concentrations: [1.0, 10.0, 100.0]  # μg/mL
+    fu_values: [0.556, 0.176, 0.965]
+  partition_coefficients:
+    concentrations: [5.0, 50.0, 250.0]  # μM
+    k_values: [0.048, 0.079, 0.034]
